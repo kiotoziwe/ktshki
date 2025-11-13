@@ -1,3 +1,4 @@
+/// HTML
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -51,3 +52,103 @@
   </footer>
 </body>
 </html>
+
+/// CSS
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c5d9e8;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.grid-repeater {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  justify-items: center; 
+  width: 100%; 
+  max-width: 1200px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px; 
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+.grid-repeater .grid-item:nth-child(even) {
+  margin-left: 50px; 
+}
+
+footer {
+  background-color: #232323;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+
