@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kt5</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; 
+      background-image: url('https://scientificrussia.ru/images/r/3eur-full.jpg'); 
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    .car {
+      position: absolute;
+      bottom: 10px; 
+      left: -200px; 
+      width: 200px;
+      height: 60px;
+      background-color: #000000; 
+      border-radius: 10px;
+      animation: moveCar 5s ease-in-out forwards;
+    }
+
+    .roof {
+      position: absolute;
+      top: 0;
+      left: 40px;
+      width: 120px;
+      height: 30px;
+      background-color: #ffffff; 
+      border-radius: 5px;
+    }
+
+    .window {
+      position: absolute;
+      top: 5px;
+      width: 45px;
+      height: 20px;
+      background-color: #ffffff;
+      border-radius: 3px;
+    }
+
+    .window.left {
+      left: 45px;
+    }
+
+    .window.right {
+      right: 45px;
+    }
+
+    .wheel {
+      position: absolute;
+      bottom: -10px;
+      width: 40px;
+      height: 40px;
+      background-color: #300b0b;
+      border-radius: 50%;
+    }
+
+    .wheel.left {
+      left: 20px;
+    }
+
+    .wheel.right {
+      right: 20px;
+    }
+
+    @keyframes moveCar {
+      0% {
+        transform: translateX(0); 
+      }
+      100% {
+        transform: translateX(calc(100vw - 200px - 50px)); 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="car">
+    <div class="roof"></div>
+    <div class="window left"></div>
+    <div class="window right"></div>
+    <div class="wheel left"></div>
+    <div class="wheel right"></div>
+  </div>
+</body>
+</html>
