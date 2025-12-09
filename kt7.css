@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav ul li + li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #007aff;
+}
+
+.hero {
+  background: #000000;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-inner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.hero-inner p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff0000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #900000;
+}
+
+.catalog {
+  padding: 60px 0;
+}
+
+.catalog h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px 0;
+}
+
+.product-card .btn-card {
+  margin-top: auto;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-card .btn-card:hover {
+  background: #e60000;
+}
+
+.promo-banner {
+  background: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.promo-banner h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.promo-banner p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.about {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #555;
+}
+
+.reviews {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.reviews h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.review-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.review-card:last-child {
+  margin-bottom: 0;
+}
+
+.contacts {
+  padding: 60px 0;
+  background: #f5f5f5;
+}
+
+.contacts h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contacts p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: #222;
+  color: #eee;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-section p, .footer-section ul {
+  font-size: 0.9rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #007aff;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin-bottom: 10px;
+}
+
+.social-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social-links li a:hover {
+  color: #007aff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
